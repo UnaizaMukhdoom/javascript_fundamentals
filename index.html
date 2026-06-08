@@ -198,18 +198,24 @@ person.greet();
     document.getElementById("title").innerHTML = "Welcome to DOM";
 
 
-    // DOM elements
-      function changeText() {
-      document.getElementById("text").innerText = "Text Changed!";
-    }
+   // arrow function
+
+   //Arrow function is a shorter way to write functions.
+
+   function greet(name) {
+    return "Hello " + name;
+}
+
+const greet = (name) => {
+    return "Hello " + name;   hello ali
+};
+
+const greet = name => "Hello " + name;
+
+console.log(greet("Ali")); //hello ali
 
 
 
-    // Events and Events Listeners.
-
-      document.getElementById("btn").addEventListener("click", function () {
-        console.log("Button clicked");
-    });
 
 
 
