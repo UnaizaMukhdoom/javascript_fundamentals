@@ -371,6 +371,57 @@ const greet = () => {
     console.log("Hello");
 };
 
+// loops
+
+// Loops
+
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+} // 0, 1, 2, 3, 4
+
+//array methods
+//map()
+//return the new array
+
+const nums = [1, 2, 3];
+
+const result = nums.map(num => num * 2);
+
+console.log(result);  // [2, 4, 6]
+
+const name=[1,2,3,4,5];
+const results =name.map(num => num > 3);
+console.log(results);  // [false, false, false, true, true]
+
+
+// filter()
+//condition match karny waly return ho gye
+const nums = [1, 2, 3, 4, 5];
+const result = nums.filter(num => num > 3);
+console.log(result);  // [4, 5]
+
+
+// reduce()
+//array ko singke value mein return krta haii
+const nums = [1, 2, 3, 4, 5];
+const sum = nums.reduce((accumulator, current) => accumulator + current, 0);
+console.log(sum);  // 15
+
+
+
+// event loop
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Timeout");
+}, 0);
+
+
+
+console.log("End");
+
+
+
 
  </script>
 </body>
