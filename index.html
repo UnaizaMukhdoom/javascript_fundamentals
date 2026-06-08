@@ -252,6 +252,31 @@ const user={
 console.log(user);  // {name: 'hamza', age: 30}
 
 
+// destructuring
+
+//old method
+const person = {
+    name: "Ali",
+    age: 25
+};  const name = person.name;
+const age = person.age;
+console.log(name, age);  // Ali 25  
+
+
+
+// new methid
+const person = {
+    name: "Ali",            
+    age: 25
+};
+const { name, age } = person;
+console.log(name, age);  // Ali 25
+
+
+
+
+
+
 
  </script>
 </body>
