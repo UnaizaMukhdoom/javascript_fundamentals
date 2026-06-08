@@ -442,7 +442,23 @@ setTimeout(() => {
 
 console.log("End");
 
+// // Synchronous Calls
+console.log("One");  //one
+console.log("Two");    // two
+console.log("Three");  // three
 
+//Asynchronous Calls
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Async Task");
+}, 2000);
+
+console.log("End");
+ //output:
+ //start
+ // end
+ //Async Task (after 2 seconds)
 
 
  </script>
