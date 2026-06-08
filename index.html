@@ -176,24 +176,58 @@ person.greet();
     document.getElementById("title").innerHTML = "Welcome to DOM";
 
 
-   // arrow function
 
-   //Arrow function is a shorter way to write functions.
+//ES6 Features
+//mean the advaced features in javascript
 
-   function greet(name) {
-    return "Hello " + name;
-}
+//Introduction to ES6. Learn ES6 concepts
 
-const greet = (name) => {
-    return "Hello " + name;   hello ali
+
+    // Template Literals
+
+   // old way:
+
+   const name="alice";
+   const age=34;
+   const message="hello i am "+name+" and i am "+age+" years old.";
+   console.log(message);  // hello i am alice and i am 34 years old.
+const name="alice";
+
+
+//new method
+const age=30;
+const message=`My name is ${name} and I am ${age} years old.`;
+console.log(message);
+
+
+let name="ahmed";
+let city="karachi";
+
+let results=`${name} lives in ${city}`;
+console.log(results);  // ahmed lives in karachi
+
+// enhanced object literals 
+
+//old method
+var name="Ali";
+var age=25;
+
+ var user={
+    name:name,
+    age:age
+ };
+ console.log(user.name); 
+ console.log(user.age); 
+
+// new method
+const name="hamza";
+const age=30;
+
+const user={
+    name,
+    age
 };
-
-const greet = name => "Hello " + name;
-
-console.log(greet("Ali")); //hello ali
-
-
-
+console.log(user);  // {name: 'hamza', age: 30}
 
 
 
