@@ -296,6 +296,80 @@ let age = 25;
 
 age = 30;   // 
 
+//
+//call, bind and apply
+
+// bind, call, apply
+
+
+//Call
+function greet() {
+    console.log(`Hello, I am ${this.name}`);
+}
+const person1 = { name: "Ali" };
+const person2 = { name: "Sara" };
+greet.call(person1);  // Hello, I am Ali
+greet.call(person2);  // Hello, I am Sara
+
+
+const person = {
+    name: "Ali"
+};
+
+function greet() {
+    console.log(this.name);
+}
+
+greet.call(person);  //ALI
+
+//bind
+const person = {
+    name: "Ali"
+};
+function greet() {
+    console.log(this.name);
+}
+const boundGreet = greet.bind(person);
+boundGreet();  // Ali
+
+// new function return krta haii
+
+const person = {
+    name: "Ali"
+};
+
+function greet() {
+    console.log(this.name);
+}
+
+const newFunc = greet.bind(person);
+
+newFunc();
+
+
+// apply
+function greet(greeting) {
+    console.log(`${greeting}, I am ${this.name}`);
+}
+const person = { name: "Ali" };
+greet.apply(person, ["Hello"]);  // Hello, I am Ali
+
+// similar to call b ut arguements in array
+function sum(a, b) {
+    console.log(a + b);
+}
+
+sum.apply(null, [10, 20]); //30
+
+
+//babel and webpack 
+
+// babel modern javascript ko purane browsers ke compatible banata haii
+// webpack module bundler hai jo multiple files ko ek file me bundle karta haii
+
+const greet = () => {
+    console.log("Hello");
+};
 
 
  </script>
