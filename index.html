@@ -136,6 +136,62 @@ console.log(Math.max(3, 7, 1));  // 7
 
 >>>>>>> main
 
+//OBJECTS
+let person={
+    name:"Ali",
+    age:25,
+    city:"Karachi"
+}
+
+const person2= {
+  name: "Sara",
+
+  greet: function () {
+    console.log("Hello");
+  }
+};
+person.greet();
+
+let student = {
+  name: "Ahmed",
+  age: 20
+};
+
+student.grade = "A";
+console.log(student);
+
+
+// this keyword
+let person3={
+    name:"Ali",
+    age:20
+
+    hello:function(){
+        console.log("Hello, my name is " + this.name);
+
+    }
+
+}
+
+const student = {
+  name: "Ali",
+  age: 20,
+  city: "Lahore"
+};
+
+console.log(student);
+
+//old way 
+const person = {
+  name: "Sara",
+
+  greet: function () {
+    console.log("Hello");
+  }
+};
+
+person.greet();
+
 
 
  </script>
