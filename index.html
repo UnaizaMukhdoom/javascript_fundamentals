@@ -274,7 +274,49 @@ console.log(name, age);  // Ali 25
 
 
 
+// rest-spread-default
 
+/ spread operator(...)
+// expand the values
+
+
+let arr1=["fruits", "vegetables"];
+let arr2=["meat", "dairy"];     
+
+let combined=[...arr1,...arr2];
+console.log(combined);  // ['fruits', 'vegetables', 'meat', 'dairy']
+
+
+const array=[1,2,3];
+const newArray=[...array,4,5];
+console.log(newArray);  // [1, 2, 3, 4, 5]
+ // withour spread they copy the array arr1=arr2
+
+
+ // rest operator(...)
+const [first, second, ...rest] = [1, 2, 3, 4, 5];
+console.log(first);  // 1
+
+console.log(second);  // 2
+console.log(rest);  // [3, 4, 5]
+
+// 
+//
+//
+
+
+const fruits = ["Apple", "Mango", "Orange"];
+
+for (const fruit of fruits) {
+    console.log(fruit);   // Apple, Mango, Orange
+}
+
+
+
+//
+let age = 25;
+
+age = 30;   // 
 
 
 
