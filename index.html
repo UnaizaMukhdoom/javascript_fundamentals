@@ -130,10 +130,45 @@ const person2= {
 };
 person.greet();
 
+let student = {
+  name: "Ahmed",
+  age: 20
+};
+
 student.grade = "A";
 console.log(student);
 
 
+// this keyword
+let person3={
+    name:"Ali",
+    age:20
+
+    hello:function(){
+        console.log("Hello, my name is " + this.name);
+
+    }
+
+}
+
+const student = {
+  name: "Ali",
+  age: 20,
+  city: "Lahore"
+};
+
+console.log(student);
+
+//old way 
+const person = {
+  name: "Sara",
+
+  greet: function () {
+    console.log("Hello");
+  }
+};
+
+person.greet();
 
 
 
