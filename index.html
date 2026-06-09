@@ -413,9 +413,21 @@ console.log(result);  // [2, 4, 6]
 
 const name=[1,2,3,4,5];
 const results =name.map(num => num > 3);
-console.log(results);  // [false, false, false, true, true]
+console.log(results);  // [false, false, false, true, true] 
+    // becausee there is comparsion not condition like (num => num > 3)  in this  which number is geater then 3 or not. it will always answers in bolean (true and false).
 
+const numbers=[1,2,3,4,5];
+let results=numbers.map(item=>item*3);
 
+console.log(numbers); // [1,2,3,4,5]
+console.log(results); // [3,6,9,12,15]
+
+const number=[1,2,3,4,5];
+let result=numbers.map(item=>item>3);
+
+console.log(number);  // [1,2,3,4,5]
+console.log(result);  // [false,false,false,true true true]
+    
 // filter()
 //condition match karny waly return ho gye
 const nums = [1, 2, 3, 4, 5];
@@ -423,11 +435,32 @@ const result = nums.filter(num => num > 3);
 console.log(result);  // [4, 5]
 
 
+    let num=[1,2,3,4,5];
+    let res1= num.filter(num=> num*2)
+    console.log(res1);  // [1,2,3,4,5]  // beacuse in filter we need compariosn which is true will keep in the array
+
+
+
+    const number=[1,2,3,4,5];
+let result=numbers.map(jjxjjnsx=>jjxjjnsx>3);   //[1,2,3,4,5]
+
+
+
 // reduce()
 //array ko singke value mein return krta haii
 const nums = [1, 2, 3, 4, 5];
 const sum = nums.reduce((accumulator, current) => accumulator + current, 0);
 console.log(sum);  // 15
+
+
+// loops with better understanding 
+
+ const numbers=[1,2,3,4,5];
+let results=numbers.map(item=>item*3);
+
+console.log(numbers);
+console.log(results);
+
 
 
 
